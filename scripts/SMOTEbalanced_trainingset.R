@@ -8,12 +8,9 @@ getwd()
 setwd("~/Desktop/DS340W/term_project/data/wisconsin")
 
 train <- read.csv("wisconsin_train.csv", header = TRUE)
-test <- read.csv("wisconsin_test.csv", header = TRUE)
 
 train$diagnosis <- as.factor(train$diagnosis)
-test$diagnosis <- as.factor(test$diagnosis)
 #View(train)
-#View(test)
 
 # Apply SMOTE to training data
 train_bal <- SMOTE(diagnosis ~ ., train, perc.over = 400, perc.under = 120)
