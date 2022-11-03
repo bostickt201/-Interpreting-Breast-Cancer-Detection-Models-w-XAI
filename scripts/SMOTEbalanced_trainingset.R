@@ -25,7 +25,10 @@ nrow(train_bal) # now have 1460 total training cases
 table(train_bal$diagnosis) # approximately equal class distribution, with slightly more malignant cases than benign
 
 ggplot(train_bal, aes(x=reorder(diagnosis, diagnosis, function(x)-length(x)))) +
-  geom_bar(fill='light green') +  labs(x='Diagnosis')
+  geom_bar(fill='light green') +
+  labs(x='Diagnosis') +
+  theme(axis.text.x = element_text(size = 15)) +
+  theme(axis.text.y = element_text(size = 15))
 
 # save balanced/augmented training data
 write.csv(train_bal,"wisconsin_train_balanced.csv", row.names = FALSE)
