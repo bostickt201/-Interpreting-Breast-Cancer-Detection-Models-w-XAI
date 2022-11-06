@@ -1,12 +1,12 @@
-"","predictors(results)"
-"1","texture_worst"
-"2","texture_mean"
-"3","concave.points_worst"
-"4","area_worst"
-"5","concave.points_mean"
-"6","perimeter_worst"
-"7","radius_worst"
-"8","concavity_worst"
-"9","area_se"
-"10","smoothness_worst"
-"11","radius_se"
+,RFE Selected Predictors
+1,texture_worst
+2,texture_mean
+3,concave.points_worst
+4,area_worst
+5,concave.points_mean
+6,perimeter_worst
+7,radius_worst
+8,concavity_worst
+9,area_se
+10,smoothness_worst
+11,radius_se
